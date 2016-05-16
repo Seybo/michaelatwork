@@ -8,7 +8,9 @@
 </head>
 <body>
 	<header>
-		<div align="right"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></div>
+		<% if current_user.try(:admin?) %>
+			<div align="right"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></div>
+		<% end %>
 	</header>
 	<% if notice %>
 		<p class="notice"><%= notice %></p>
