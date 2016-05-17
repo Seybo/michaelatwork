@@ -1,7 +1,6 @@
-
 <% @posts.each do |post| %>
   <h2 align="center"><%= post.title %></h2> <br>	
-	<%= truncate(post.body, length: 1000) %> 
+	<%= raw Rinku.auto_link(truncate(post.body, length: 1000)) %> 
 	<%= link_to 'Read more', post_path(post) %><br> <br> 
 
 	<% if current_user.try(:admin?) %>

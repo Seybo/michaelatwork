@@ -29,6 +29,9 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
+gem "awesome_print", require:"ap"
+gem 'rinku', '~> 1.7', '>= 1.7.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,6 +44,8 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem "pry-rails"
+  gem 'quiet_assets'
 end
 
 group :development do
