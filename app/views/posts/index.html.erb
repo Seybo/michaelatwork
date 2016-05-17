@@ -1,7 +1,4 @@
-<h1 align="center">Posts listing:</h1>
-<% if current_user.try(:admin?) %>
-	<h2 align="left"><%= link_to 'New post', new_post_path %></h1>
-<% end %>
+
 <% @posts.each do |post| %>
   <h2 align="center"><%= post.title %></h2> <br>	
 	<%= truncate(post.body, length: 1000) %> 
