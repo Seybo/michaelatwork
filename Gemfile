@@ -35,6 +35,10 @@ gem 'rinku', '~> 1.7', '>= 1.7.3'
 gem 'ckeditor'
 gem 'paperclip'
 
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'truncate_html', '~> 0.9.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

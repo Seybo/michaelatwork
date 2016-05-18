@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   mount Ckeditor::Engine => '/ckeditor'
-  devise_for :users
   resources :posts
 #  root 'posts#index'
   
