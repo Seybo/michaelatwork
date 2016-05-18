@@ -18,7 +18,7 @@ permit_params :title, :body
 form do |f|
   f.inputs "Post Details" do
     f.input :title
-    f.cktext_area :body
+    f.input :body, :as => :ckeditor
   end
   f.actions
 end
