@@ -2,8 +2,8 @@
   <h2 align="center"><%= post.title %></h2> <br>	
 
 	<%= raw(truncate_html post.body, length: 1000) %>
-	<%= link_to 'Read more', post_path(post) %><br> <br>
-	<h6 align="right"><%= post.created_at.strftime("%B %d, %Y") %></h2> <br>
+	<%= link_to 'Read more', post_path(post) %>
+	<div align="right"><%= post.created_at.strftime("%B %d, %Y") %></div> <br>
 
 	<% if false %>
 		<% if current_user.try(:admin?) %>
