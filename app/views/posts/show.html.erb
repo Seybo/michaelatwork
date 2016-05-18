@@ -1,5 +1,6 @@
 <h2 align="center"><%= @post.title %></h2>
 <%= raw Rinku.auto_link(simple_format @post.body) %>
+<h6 align="right"><%= @post.created_at.strftime("%B %d, %Y") %></h2>
 
 <br>
 <br>
