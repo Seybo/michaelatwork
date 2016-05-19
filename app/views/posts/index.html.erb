@@ -1,7 +1,6 @@
 <% @posts.each do |post| %>
   <h2 align="center"><%= post.title %></h2> <br>	
-
-	<%= raw(truncate_html post.body, length: 1000) %>
+	<%= markdown(post.body) %>
 	<%= link_to 'Read more', post_path(post) %>
 	<div align="right"><%= post.created_at.strftime("%B %d, %Y") %></div> <br>
 
