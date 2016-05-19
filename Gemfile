@@ -32,7 +32,6 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 gem "awesome_print", require:"ap"
 gem 'rinku', '~> 1.7', '>= 1.7.3'
 
-gem 'ckeditor'
 gem 'paperclip'
 
 gem 'activeadmin', github: 'activeadmin'
