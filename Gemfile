@@ -6,7 +6,6 @@ gem 'rails', '4.2.6'
 # gem 'sqlite3'
 gem 'pg', '~> 0.18.4'
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem "autoprefixer-rails"
 # Use Uglifier as compressor for JavaScript assets
