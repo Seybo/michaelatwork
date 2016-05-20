@@ -4,7 +4,7 @@
 	<%= link_to 'Read more', post_path(post) %>
 	<div align="right"><%= post.created_at.strftime("%B %d, %Y") %></div> <br>
 
-	<% if current_user.try(:admin?) %>
+	<% if current_user.try(:admin?) || Rails.env.development? %>
 		<%= link_to 'Edit', edit_admin_post_path(post) %>
 		<%= link_to 'Delete', admin_post_path(post), method: :delete, data: { confirm: 'Sure?'} %> <br> 
 	<% end %>
