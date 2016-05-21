@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-gem 'pg', '~> 0.18.4'
+gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails'
 gem "autoprefixer-rails"
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -20,25 +20,25 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', group: :doc
 
-gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'devise', '~> 3.5', '>= 3.5.6'
-gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+gem 'haml'
+gem 'devise'
+gem 'dotenv-rails'
 
 gem "awesome_print", require:"ap"
-gem 'rinku', '~> 1.7', '>= 1.7.3'
+gem 'rinku'
 
 gem 'paperclip'
 
 gem 'activeadmin', github: 'activeadmin'
 
-gem 'truncate_html', '~> 0.9.3'
+gem 'truncate_html'
 
-gem 'redcarpet', '~> 3.3', '>= 3.3.4'
-gem 'rouge', '~> 1.10', '>= 1.10.1'
+gem 'redcarpet'
+gem 'rouge'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,12 +49,12 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem "better_errors"
   gem 'meta_request'
-  gem 'rails-footnotes', '~> 4.0'
+  gem 'rails-footnotes'
 end
 
