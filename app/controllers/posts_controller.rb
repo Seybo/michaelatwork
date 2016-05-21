@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show] unless Rails.env.development?
 
   def index
-    @posts = Post.order(id: :desc)  
+    @posts = Post.order(published_at: :desc)  
   end
 
   def new 
