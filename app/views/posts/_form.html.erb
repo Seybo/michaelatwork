@@ -3,9 +3,9 @@
   <% if @post.errors.any? %>
     <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving</h2>
     <ul>
-    	<% @post.errors.full_messages.each do |msg| %>
-    		<li><%= msg %></li>
-			<% end %>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
     </ul>
   <% end %>
 
@@ -13,15 +13,19 @@
   <%= f.text_field :title %>
   <br><br> 
 
-	<%= f.label :body, "Write your article here" %><br> 
+  <%= f.label :body, "Write your article here" %><br> 
   <%= f.text_area :body, cols: 100, rows: 20 %>
+  <br><br>
+
+  <%= f.label :published_at, "Date of publishing" %><br> 
+  <%= f.date_select :published_at %>
   <br><br>
 
   <%= f.label :image, "Attach image" %><br> 
   <%= f.file_field :image %>
   <br><br>
 
-	<%= f.submit %>
+  <%= f.submit %>
 
 <% end %>
 <div align='left'><%= link_to 'Back to posts list', posts_path %></div>

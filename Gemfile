@@ -28,14 +28,11 @@ gem 'haml'
 gem 'devise'
 gem 'dotenv-rails'
 
-gem "awesome_print", require:"ap"
-gem 'rinku'
+#gem "awesome_print", require:"ap"
 
 gem 'paperclip'
 
 gem 'activeadmin', github: 'activeadmin'
-
-gem 'truncate_html'
 
 gem 'redcarpet'
 gem 'rouge'
