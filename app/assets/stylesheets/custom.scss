@@ -1,16 +1,40 @@
-body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 20px;
-  font-weight: 300;
-  text-indent: 20px;
-}
-
-h2 {
-  font-weight: 700;
-}
-
 @media (min-width: 1200px) {
     .container{
         width: 1200px;
     }
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: 400;
+  text-indent: 20px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.post-date {
+  text-align: right;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.highlight {
+  text-indent: 0px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 500;
 }

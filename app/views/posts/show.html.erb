@@ -1,7 +1,7 @@
 <h2 align="center"><%= @post.title %></h2>
 <%= markdown(@post.body) %>
 <%= image_tag @post.image(:large) %>
-<h6 align="right"><%= @post.published_at.strftime("%B %d, %Y") %></h2>
+<div class="post-date"><%= @post.published_at.strftime("%B %d, %Y") %></div>
 
 <br>
 <br>

@@ -1,8 +1,10 @@
 <% @posts.each do |post| %>
-  <h2 align="center"><%= post.title %></h2> <br>  
+  <h2 align="center"><%= post.title %></h2>  
   <%= markdown(post.body) %>
   <%= link_to 'Read more', post_path(post) %>
-  <div align="right"><%= post.published_at.strftime("%B %d, %Y") %></div> <br>
+  <div class="post-date">
+    <%= post.published_at.strftime("%B %d, %Y") %>
+  </div> <br>
 
   <% if current_user.try(:admin?) || Rails.env.development? %>
     <%= link_to 'Edit', edit_admin_post_path(post) %>
