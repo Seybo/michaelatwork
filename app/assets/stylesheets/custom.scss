@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
     .container{
         width: 1200px;
     }
@@ -17,12 +17,14 @@ h2 {
   font-weight: 700;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #C6AA4E;
 }
 
 a {
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
   font-weight: 700;
+  color: #C6AA4E;
 }
 
 .post-date {
@@ -30,11 +32,5 @@ a {
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
   font-weight: 700;
-}
-
-.highlight {
-  text-indent: 0px;
-  font-family: 'Roboto Slab', serif;
-  font-size: 20px;
-  font-weight: 500;
+  color: #C6AA4E;
 }

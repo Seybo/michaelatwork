@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-  <h2 align="center"><%= post.title %></h2>  
+  <h2 align="center"><%= markdown(post.title) %></h2>  
   <%= markdown(post.body) %>
   <%= link_to 'Read more', post_path(post) %>
   <div class="post-date">
