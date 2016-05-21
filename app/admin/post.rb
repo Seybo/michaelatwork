@@ -6,7 +6,8 @@ form :html => { :enctype => "multipart/form-data" } do |f|
   f.inputs "Post Details" do
     f.input :title
     f.input :body
-    f.input :image, :as => :file, :hint => f.object.image.present? ? f.template.image_tag(f.object.image.url(:thumb)) : content_tag(:span, "no image yet")
+    f.input :published_at
+    f.input :image, :as => :file, :hint => f.object.image.present? ? f.image_tag(f.object.image.url(:thumb)) : content_tag(:span, "no image yet")
   end
   f.actions
 end
@@ -15,6 +16,7 @@ show do |ad|
   attributes_table do
     row :title
     row :body
+    row :published_at
     row :image do
       image_tag(ad.image.url(:thumb))
     end
