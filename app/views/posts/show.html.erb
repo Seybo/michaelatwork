@@ -10,3 +10,5 @@
   <%= link_to 'Delete', admin_post_path(@post), method: :delete, data: { confirm: 'Sure?'} %> <br> 
 <% end %>
 <div align='left'><%= link_to 'Back to posts list', posts_path %></div>
+
+<%= render 'disqus' %>
