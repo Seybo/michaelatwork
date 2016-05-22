@@ -1,5 +1,5 @@
 <h2 align="center"><%= @post.title %></h2>
-<%= markdown(@post.body) %>
+<%= markdown(remove_separator @post.body) %>
 <%= image_tag @post.image(:large) if @post.image.present?  %>
 <div class="post-date"><%= @post.published_at.strftime("%B %d, %Y") %></div>
 
