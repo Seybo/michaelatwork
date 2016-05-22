@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new 
-    @post = Post.new
+    @post = Post.new(published_at: DateTime.now.change(offset: "-3000"))
   end
 
   def create

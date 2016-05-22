@@ -7,6 +7,7 @@ action_item :view, only: :show do
 end
 
 form :html => { :enctype => "multipart/form-data" } do |f|
+  f.object.published_at = DateTime.now.change(offset: "-3000")
   f.inputs "Post Details" do
     f.input :title
     f.input :body

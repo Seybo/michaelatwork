@@ -13,6 +13,7 @@
   <header>
     <% if current_user.try(:admin?) || Rails.env.development? %>
       <div align="right">
+        <%= link_to "New post", new_admin_post_path%> |
         <%= link_to "Dashboard", admin_posts_path%> |
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
       </div>
