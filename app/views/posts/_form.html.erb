@@ -9,6 +9,7 @@
     </ul>
   <% end %>
 
+  <%= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a Category"} %>
   <%= f.label :title %><br>
   <%= f.text_field :title %>
   <br><br> 
