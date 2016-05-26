@@ -24,7 +24,6 @@ gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', group: :doc
 
-gem 'haml'
 gem 'devise'
 gem 'dotenv-rails'
 
@@ -37,6 +36,8 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'redcarpet'
 gem 'rouge'
 gem 'friendly_id'
+gem 'slim-rails'
+gem 'html2slim'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
