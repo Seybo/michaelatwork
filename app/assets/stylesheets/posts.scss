@@ -1,3 +1,81 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.posts-container {
+
+  margin: 0 10%;
+
+  h1 {
+    text-align: center;
+    font-family: $font-ubuntu;
+    font-weight: 400;
+    color: darken($main-font-color, 50%);
+    text-transform: uppercase;
+    font-size: $font-size * 1.2;
+  }
+
+  .post-header {
+
+    text-align: center;
+    font-family: $font-ubuntu;
+    font-weight: 400;
+    color: darken($main-font-color, 50%);
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      outline: none;
+      color: darken($main-font-color, 50%);
+      font-family: $font-ubuntu;
+      font-size: $font-size * 1.2;
+    }
+
+  }
+
+  .post-date {
+    text-align: center;  
+    color: lighten($main-font-color, 30%);
+    margin: 2% auto;
+  }
+
+  .divider  {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .effect-hover-link {
+    display: flex;    
+    justify-content: center;
+  }
+
+  .effect-hover-link a {
+    align-self: center;
+    min-width: 150px;
+    min-height: $link-height;
+    padding: 0 20px;
+    line-height: $link-height;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-ubuntu;
+    font-size: $font-size * 0.8;
+    color: lighten($main-font-color, 50%);
+
+  }
+
+  .effect-hover-link a::before {
+
+    content: attr(data-hover);
+    position: absolute;
+    color: lighten($main-font-color, 30%);
+    transition: opacity 0.3s, color 0.3s;
+    font-size: $font-size * 0.8;    
+
+  }
+
+  .effect-hover-link a:hover::before {
+
+    opacity: 0;
+    color: darken($main-font-color, 50%);
+
+  }
+
+}

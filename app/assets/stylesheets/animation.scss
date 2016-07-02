@@ -1,0 +1,99 @@
+.effect-1 a::after {
+
+  content: '';
+  position: absolute;
+  top: 140%;
+  left: 0;
+  width: 102%;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(10px);
+  opacity: 0;
+
+}
+
+.effect-1 a:hover::after {
+
+  transform: translateY(-5px);
+  opacity: 1;
+
+}
+
+
+/* LOGO ANIMATION */
+
+/* .animation-logo-appearing {
+
+  animation-name: animation-logo-appearing;
+  animation-duration: 1s;
+
+}
+
+.animation-main-nav-appearing {
+
+  animation-name: animation-menu-appearing;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+
+}
+
+.animation-main-text-appearing {
+
+  animation-name: animation-main-text-appearing;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes animation-logo-appearing {
+
+  from {
+
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }  
+
+  to {
+
+      transform: translateY(0px);
+      opacity: 1;
+
+  }  
+
+}
+
+@keyframes animation-menu-appearing {
+
+  from {
+
+      opacity: 0;
+
+  }  
+
+  to {
+
+      opacity: 1;
+
+  }  
+
+}
+
+@keyframes animation-main-text-appearing {
+
+  from {
+
+      opacity: 0;
+
+  }  
+
+  to {
+
+      opacity: 1;
+      
+  }  
+
+} */

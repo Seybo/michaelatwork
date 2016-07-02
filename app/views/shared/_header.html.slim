@@ -1,0 +1,57 @@
+div class="admin-header"
+
+- if current_user.try(:admin?) || Rails.env.development?
+
+  div align="right"
+    = link_to "New post", new_admin_post_path
+    '  |
+    = link_to "Dashboard", admin_posts_path 
+    '  |
+    = link_to "Sign out", destroy_user_session_path, method: :delete
+
+- if notice
+  p class="notice" 
+  = notice
+- elsif alert
+  p class="alert" 
+  = alert
+
+div class="header-wrapper"
+
+  header class="page-header"
+    div class="page-header__logo animation-logo-appearing" 
+
+      span 
+        '[
+      'Michael 
+      span 
+        '@ 
+      'Work 
+      span 
+        '::
+      'Space 
+      span 
+        ']
+
+  nav class="main-nav animation-main-nav-appearing"
+
+    a href="#" class="toggleNav"
+      '☰ menu
+    ul class="effect-1"
+      li
+        a href="/"
+          ': home
+      li
+        a href="/development"
+          ': development  
+      li           
+        a href="/design"
+          ': design
+      li    
+        a href="/posts"
+          ': blog
+      li
+        a href="/contact"
+          ': contact
+
+div class="divider"

@@ -108,6 +108,7 @@ GEM
     has_scope (0.6.0)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
+    high_voltage (3.0.0)
     hpricot (0.8.6)
     html2slim (0.2.0)
       hpricot
@@ -268,6 +269,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   friendly_id
+  high_voltage
   html2slim
   jbuilder
   jquery-rails

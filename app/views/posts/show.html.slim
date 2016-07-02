@@ -1,0 +1,17 @@
+div class="posts-container"
+
+  h1 align="center"
+    = @post.title
+    
+  div class="post-date"
+    = @post.published_at.strftime("%B %d, %Y")
+
+  = markdown(remove_separator @post.body)
+  = image_tag @post.image(:large) if @post.image.present?
+
+  div class="effect-hover-link"
+    = link_to 'Back to posts list', posts_path, data: { hover: "Back to posts list" }
+
+/   = render 'disqus'
+
+/ script id="dsq-count-scr" src="//michaelatwork.disqus.com/count.js" async

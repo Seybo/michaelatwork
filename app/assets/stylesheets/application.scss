@@ -1,5 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
-$baseFontFamily: "Roboto Slab";
-@import "bootstrap.min";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500,400);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@import "normalize";
 @import "rouge";
 @import "custom";
+@import "media_rules";
+@import "animation";
+@import "posts";
+@import "design";
+@import "development";
+@import "contact";

@@ -38,6 +38,7 @@ gem 'rouge'
 gem 'friendly_id'
 gem 'slim-rails'
 gem 'html2slim'
+gem 'high_voltage'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

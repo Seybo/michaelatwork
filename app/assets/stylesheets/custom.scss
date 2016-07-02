@@ -1,36 +1,130 @@
-@media (min-width: 600px) {
-    .container{
-        width: 1200px;
-    }
+$main-font-color: #424652;
+$font-size: 20px;
+$green-color: #237546;
+$header-footer-background: #9821BC;
+$header-footer-text-color: $main-font-color;
+$link-height: 40px;
+$font-ubuntu: 'Ubuntu', Helvetica, Arial, sans-serif;
+$font-vollkorn: 'Vollkorn', Georgia, Times, serif;
+
+html {
+
+  box-sizing: border-box;
+  color: $main-font-color;
+  font-size: $font-size;
+  font-family: $font-vollkorn;
+
 }
 
-body {
-  font-family    : 'Open Sans';
-  font-size      : 24px;
-  font-weight    : 400;
-  text-indent    : 20px;
+*, *:before, *:after {
+
+  box-sizing: inherit;
+
 }
 
-h2 {
-  font-family    : 'Roboto Slab', serif;
-  font-size      : 40px;
-  font-weight    : 700;
-  padding-top    : 20px;
-  padding-bottom : 20px;
-  color          : #DB5400;
+.header-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: $header-footer-text-color;
+
 }
 
-a {
-  font-family    : 'Roboto Slab', serif;
-  font-size      : 20px;
-  font-weight    : 700;
-  color          : #7A2F00;
+.page-header {
+
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+}
+ 
+.page-header__logo {
+
+  font-size: $font-size * 2;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-shadow: 0px 5px 5px rgba(66, 70, 82, 0.2);
+  font-weight: 500;
+
 }
 
-.post-date {
-  text-align     : right;
-  font-family    : 'Roboto Slab', serif;
-  font-size      : 20px;
-  font-weight    : 700;
-  color          : #7A2F00;
+.main-nav {
+
+  .toggleNav {
+
+    display: none;
+    text-align: center;
+    position: relative;
+    font-family: $font-ubuntu;
+    text-transform: uppercase;
+
+  }
+
+  a {
+
+    display: inline-block;
+    position: relative;
+    color: $main-font-color;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: $font-size;
+    color: $header-footer-text-color;
+
+  }
+
+  ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+  }
+
+}
+
+.divider {
+
+  border-top: 1px solid #e9e9e9;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.main-page-content {
+
+  display: flex;
+  margin: 0 2%;
+
+  div {
+
+    flex: 1;
+    padding: 0 3%;
+    
+  }
+
+  .main-page-content__left {
+
+    flex: 2;
+    margin-right: 3%;
+
+  }
+
+  ul {
+
+    list-style: none;
+    padding: 0;
+
+  }
+
+  .home-intro-link {
+    text-decoration: none;
+    color: blue;
+    text-shadow: 0px 3px 3px rgba(66, 70, 82, 0.2);   
+  }
+
 }

@@ -1,0 +1,18 @@
+div class="posts-container"
+
+  - @posts.each do |post|
+
+    section class="post"
+
+      h2 class="post-header"
+        = link_to markdown(post.title), post_path(post)
+
+      div class="post-date"
+        = post.published_at.strftime("%B %d, %Y")
+
+      = markdown(truncate_post post.body)
+
+      div class="effect-hover-link"
+        = link_to 'Read more', post_path(post), data: { hover: "Read more" }
+
+      div class="divider"
