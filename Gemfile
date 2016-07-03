@@ -7,7 +7,7 @@ gem 'rails'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails'
-gem "autoprefixer-rails"
+gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
@@ -34,7 +34,7 @@ gem 'paperclip'
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'redcarpet'
-gem 'rouge'
+# gem 'rouge'
 gem 'friendly_id'
 gem 'slim-rails'
 gem 'html2slim'
@@ -43,7 +43,7 @@ gem 'high_voltage'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem "pry-rails"
+  gem 'pry-rails'
   gem 'quiet_assets'
 end
 
@@ -53,7 +53,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem "better_errors"
+  gem 'better_errors'
   gem 'meta_request'
   gem 'rails-footnotes'
 end

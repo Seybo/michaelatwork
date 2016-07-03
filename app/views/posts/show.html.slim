@@ -1,16 +1,18 @@
 div class="posts-container"
 
-  h1 align="center"
-    = @post.title
-    
-  div class="post-date"
-    = @post.published_at.strftime("%B %d, %Y")
+  section class="post-full"
+  
+    h1 align="center"
+      = @post.title
+      
+    div class="post-date"
+      = @post.published_at.strftime("%B %d, %Y")
 
-  = markdown(remove_separator @post.body)
-  = image_tag @post.image(:large) if @post.image.present?
+    = markdown(remove_separator @post.body)
+    = image_tag @post.image(:large) if @post.image.present?
 
-  div class="effect-hover-link"
-    = link_to 'Back to posts list', posts_path, data: { hover: "Back to posts list" }
+    div class="effect-hover-link"
+      = link_to 'Back to posts list', posts_path, data: { hover: "Back to posts list" }
 
 /   = render 'disqus'
 

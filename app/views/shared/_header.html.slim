@@ -1,37 +1,7 @@
-div class="admin-header"
-
-- if current_user.try(:admin?) || Rails.env.development?
-
-  div align="right"
-    = link_to "New post", new_admin_post_path
-    '  |
-    = link_to "Dashboard", admin_posts_path 
-    '  |
-    = link_to "Sign out", destroy_user_session_path, method: :delete
-
-- if notice
-  p class="notice" 
-  = notice
-- elsif alert
-  p class="alert" 
-  = alert
-
 div class="header-wrapper"
 
-  header class="page-header"
-    div class="page-header__logo animation-logo-appearing" 
-
-      span 
-        '[
-      'Michael 
-      span 
-        '@ 
-      'Work 
-      span 
-        '::
-      'Space 
-      span 
-        ']
+  header class="header"
+    div class="header__logo animation-logo-appearing"
 
   nav class="main-nav animation-main-nav-appearing"
 
@@ -53,5 +23,3 @@ div class="header-wrapper"
       li
         a href="/contact"
           ': contact
-
-div class="divider"

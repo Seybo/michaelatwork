@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:500,400);
 @import url(https://fonts.googleapis.com/css?family=Vollkorn);
 @import "normalize";
-@import "rouge";
+@import "variables";
+// @import "rouge";
 @import "custom";
 @import "media_rules";
 @import "animation";
+@import "home";
 @import "posts";
 @import "design";
 @import "development";

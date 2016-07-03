@@ -1,0 +1,27 @@
+div class="footer-wrapper"
+
+  footer class="footer"
+    div class="footer__left"
+      p
+        ' Copyright © 2016, Michael Miro 
+    div class="footer__right"
+      p
+        ' Powered by Ruby on Rails. Design and Coding by Michael Miro
+
+  div class="admin-toolbox"
+
+  - if current_user.try(:admin?) || Rails.env.development?
+
+    div align="right"
+      = link_to "New post", new_admin_post_path
+      '  |
+      = link_to "Dashboard", admin_posts_path 
+      '  |
+      = link_to "Sign out", destroy_user_session_path, method: :delete
+
+  - if notice
+    p class="notice" 
+    = notice
+  - elsif alert
+    p class="alert" 
+    = alert

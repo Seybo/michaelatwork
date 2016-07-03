@@ -1,12 +1,3 @@
-$main-font-color: #424652;
-$font-size: 20px;
-$green-color: #237546;
-$header-footer-background: #9821BC;
-$header-footer-text-color: $main-font-color;
-$link-height: 40px;
-$font-ubuntu: 'Ubuntu', Helvetica, Arial, sans-serif;
-$font-vollkorn: 'Vollkorn', Georgia, Times, serif;
-
 html {
 
   box-sizing: border-box;
@@ -22,6 +13,16 @@ html {
 
 }
 
+.global-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  min-width: 320px;
+  min-height: 100vh;
+
+}
+
 .header-wrapper {
 
   display: flex;
@@ -29,25 +30,33 @@ html {
   justify-content: center;
   align-items: center;
   list-style: none;
-  color: $header-footer-text-color;
+  color: $main-font-color;
 
 }
 
-.page-header {
+.header-wrapper::after {
+  
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e9e9e9;
+  height: 10px;
+  width: 90vw;
+  margin: 50px 3%;
+
+}
+
+.header {
 
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-weight: 400;
 
 }
  
-.page-header__logo {
+.header__logo {
 
-  font-size: $font-size * 2;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-shadow: 0px 5px 5px rgba(66, 70, 82, 0.2);
-  font-weight: 500;
+  background: $logo;
+  width: 500px;
+  height: 100px;
 
 }
 
@@ -71,7 +80,7 @@ html {
     text-decoration: none;
     margin: 0 30px;
     font-size: $font-size;
-    color: $header-footer-text-color;
+    color: $main-font-color;
 
   }
 
@@ -90,41 +99,29 @@ html {
 .divider {
 
   border-top: 1px solid #e9e9e9;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
 }
 
-.main-page-content {
+
+.footer-wrapper::before {
+  
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e9e9e9;
+  height: 10px;
+  width: 90vw;
+  margin: 50px 3% 0 3%;
+
+}
+
+.footer {
 
   display: flex;
-  margin: 0 2%;
-
-  div {
-
-    flex: 1;
-    padding: 0 3%;
-    
-  }
-
-  .main-page-content__left {
-
-    flex: 2;
-    margin-right: 3%;
-
-  }
-
-  ul {
-
-    list-style: none;
-    padding: 0;
-
-  }
-
-  .home-intro-link {
-    text-decoration: none;
-    color: blue;
-    text-shadow: 0px 3px 3px rgba(66, 70, 82, 0.2);   
-  }
+  margin: 0 3%;
+  color: lighten($main-font-color, 30%);
+  justify-content: space-between;
+  font-size: $font-size * 0.8;
 
 }
