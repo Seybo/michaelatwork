@@ -22,11 +22,10 @@
     font-weight: 400;
     font-style: normal;
 }
-// @import url(https://fonts.googleapis.com/css?family=Ubuntu:500,400);
-// @import url(https://fonts.googleapis.com/css?family=Vollkorn);
-@import "normalize";
+
 @import "variables";
-// @import "rouge";
+@import "normalize";
+@import "rouge";
 @import "custom";
 @import "media_rules";
 @import "animation";

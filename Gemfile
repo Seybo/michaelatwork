@@ -27,14 +27,14 @@ gem 'sdoc', group: :doc
 gem 'devise'
 gem 'dotenv-rails'
 
-#gem "awesome_print", require:"ap"
+# gem "awesome_print", require:"ap"
 
 gem 'paperclip'
 
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'redcarpet'
-# gem 'rouge'
+gem 'rouge'
 gem 'friendly_id'
 gem 'slim-rails'
 gem 'html2slim'
@@ -57,4 +57,3 @@ group :development do
   gem 'meta_request'
   gem 'rails-footnotes'
 end
-
