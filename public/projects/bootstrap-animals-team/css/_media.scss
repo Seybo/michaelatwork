@@ -1,0 +1,219 @@
+/* Large desktops and laptops more than 1200px */
+@media (min-width: $screen-lg +1) {
+  header {
+
+    #top-menu {
+      li a {
+        padding: 0 20px;
+      }
+    }
+
+    &:before {
+      background-image: url(/projects/bootstrap-animals-team/img/header1800x2.jpg);
+    }
+  }
+}
+
+/* Landscape tablets 993 to 1200px and medium desktops */
+@media (max-width: $screen-lg) {
+  
+  header {
+
+    #top-menu {
+      li a {
+        padding: 0 20px;
+      }
+    }
+
+    &:before {
+      background-image: url(/projects/bootstrap-animals-team/img/header1200x2.jpg);
+    }
+  }
+
+}
+
+/* Portrait tablets 768 to 992px and small desktops */
+@media (max-width: $screen-md) {
+  
+  p {
+    font-size: $font-size-base;
+  }
+
+  h1 {
+    font-size: $font-size-h2;
+  }
+
+  h2 {
+    font-size: $font-size-h3;
+  }
+
+  header {
+
+    #top-menu {
+      li a {
+        padding: 0 15px;
+      }
+    }
+
+    .title-block {
+      max-width: 550px;
+    }
+
+    &:before {
+      background-image: url(/projects/bootstrap-animals-team/img/header960x2.jpg);
+    }
+  }
+
+  #section-1 {
+    .social-section {
+      margin-bottom: 30px;
+    }
+
+    .item-content{ 
+      p {
+        min-height: 75px;
+      }
+    }
+  }
+
+}
+
+/* Landscape phones 481 to 767px and portrait tablets */
+@media (max-width: $screen-sm - 1) {
+
+  h1, h2 {
+    font-size: $font-size-h3;
+  }
+
+  nav {
+    height: 60px;
+    line-height: 60px;
+
+    .top-line {
+      display: none;
+    }
+
+    #top-menu {
+      background: $theme-color1;
+
+      li {
+        display: block;
+        font-size: 16px;
+
+        a {
+          display: block;
+          text-align: center;
+          &:hover {
+            color: $theme-color1;
+            background: white;   
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    height: 400px;
+
+    p {
+      font-size: $font-size-small;
+    }
+
+    .title-block {
+      padding: 100px 20px;
+      max-width: 450px;
+    }
+
+    &:before {
+      background-image: url(/projects/bootstrap-animals-team/img/header767x2.jpg);
+    }
+
+  }
+
+  .my-btn {
+    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  }
+
+
+  body .section-header {
+    margin: 50px 0 50px 0;
+  }
+
+  #section-1 {
+
+    margin: 0 50px;
+
+    .social-section {
+      margin-bottom: 20px;
+    }
+
+    .item-content{ 
+      p {
+        min-height: 0px;
+      }
+    }
+  }
+
+  #section-2 {
+
+    margin: 0 50px;
+
+    .col-sm-6:not(:first-child) i {
+      margin-top: 50px;
+    }
+  
+  }
+  
+  footer {
+
+    .footer-wrap {
+      flex-direction: column;
+
+      .location,
+      .copyright {
+        flex-basis: 100%;
+      }
+
+      .social-section {
+        flex-basis: 100%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/* Portrait phones 480px and smaller */
+@media (max-width: $screen-xs) {
+
+  h1, h2 {
+    font-size: $font-size-h4;
+  }
+
+  h4 {
+    font-size: $font-size-base;
+  }
+
+  header {
+    height: 300px;
+
+    &:before {
+      background-image: url(/projects/bootstrap-animals-team/img/header480x2.jpg);
+    }
+
+    .title-block {
+      padding: 70px 20px;
+      max-width: 330px;
+    }
+  }
+
+  nav {
+
+    #top-menu {
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+}

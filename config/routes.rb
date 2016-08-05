@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get 'design' => 'high_voltage/pages#show', id: 'design'
   get 'contact' => 'high_voltage/pages#show', id: 'contact'
 
-  get '/staticprojects/:page' => 'static_projects#show'
+  # get '/projects/:page' => 'projects#show'
 end

@@ -1,0 +1,24 @@
+.my-btn {
+  background-color: $theme-color1;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.my-btn-lg {
+  padding: 10px 50px;
+  font-family: $font-ubuntu-medium;
+}
+
+.menu-button {
+  height: 40px;
+  width: 40px;
+  margin: 4px 10px 0 0;
+  background: $theme-color1;
+  border-radius: 50%;
+}
+
+.fa-bars {
+  position: relative;
+  top: -15px;
+}

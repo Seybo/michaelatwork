@@ -1,0 +1,284 @@
+// ******** body
+body {
+  
+  font-family: $font-vollkorn;
+  min-width: 320px;
+
+  .zero-padding {
+    padding: 0;
+  }
+
+  .btn, h4 {
+    font-family: $font-ubuntu-medium;
+    text-transform: uppercase;
+  }
+
+  .section-header {
+    display: flex;
+    color: $theme-color1;
+    font-family: $font-ubuntu-medium;
+    text-transform: capitalize;
+    justify-content: center;
+    margin: 100px 0 50px 0;
+
+    h2 {
+      @include headers-pseudo-design; 
+      }
+    }
+
+} // body
+
+// ******** header
+header {
+
+  height: 500px;
+  position: relative;
+  z-index: 1;
+
+  h1, h2, h3, h4 {
+    font-family: $font-ubuntu-medium;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  p {
+    color: $link-hover-color;
+    font-size: $font-size-large;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    z-index: -1;
+    background-size: cover;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .title-block {
+    padding-top: 150px;
+  }
+
+  nav {
+    height: 53px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: $theme-color1;
+    box-shadow: 1px 1px 10px $theme-color1;
+
+    .navbar-header { 
+
+      .fa {
+        color: white;
+      }
+    }
+  }
+
+  .top-line {
+    border-bottom: 2px solid white;
+  }
+  
+  #top-menu {
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 20px;
+    }
+
+    li {
+      
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: $font-size-base*1.2;
+      font-family: $font-ubuntu-medium;     
+      @include linx-lvha(white, white, $link-hover-color, white);
+      color: white;
+      
+      a {
+        display: block;
+        padding: 0 30px;
+      }
+    }
+
+  } // .menu 
+} // header
+
+// ******** section-1
+#section-1 {
+
+  h3 {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+  
+  .item-content{ 
+    p, span {
+    text-align: right;
+    }
+
+    p {
+      min-height: 120px;
+    }
+  }
+
+  span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    margin-bottom: 10px;
+  }
+
+  .social-section {
+    text-align: right;
+    font-size: 25px;
+
+    @include linx-lvha($text-color, $text-color, $theme-color1, $theme-color1)
+  }
+} // section-1
+
+// ******** section-2
+#section-2 {
+
+  .clearfix {
+    margin-bottom: 50px;
+  }
+
+  .section-2-settings {
+    text-align: center;
+    .fa {
+      font-size: 40px;
+      color: $theme-color1;
+    }
+  }
+} // section-2
+
+// ******** section-3
+#section-3 {
+  .item-image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50%;
+  }
+  .item-image img,
+  .item-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: rgba(209,62,62,0.7);
+    color: white;
+  }
+
+  .item-content {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    h4 {
+      flex-grow: 1;
+      margin: 5% auto;
+    }
+
+    p {
+      flex-grow: 5;
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+} // section-3
+
+// ******** section-4
+
+#section-4 {
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-family: $font-ubuntu-medium;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin-bottom: 50px;
+    text-transform: none;
+  }
+}
+
+// ******** footer
+
+footer {
+  height: 100px;
+  margin-top: 100px;
+  background-color: $theme-color1;
+  text-align: center;
+
+  .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    min-height: 100px;
+    .location,
+    .copyright {
+      flex-basis: 30%;
+      
+      h4, p {
+        margin: 0;
+      }
+    }
+
+    .social-section {
+      flex-basis: 30%;
+      text-align: center;
+      @include linx-lvha(white, white, lighten($theme-color1,50%), white);
+      font-size: 30px;
+      a {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+#heart {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 9px;
+    margin: 0;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 5px;
+    top: 0;
+    width: 5px;
+    height: 8px;
+    background: white;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
