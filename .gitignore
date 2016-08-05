@@ -42,4 +42,4 @@ bower.json
 #other
 .rubocop_todo.yml
 .env
-
+public/assets/
