@@ -45,6 +45,10 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-rails'
   gem 'quiet_assets'
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false
 end
 
 group :development do
