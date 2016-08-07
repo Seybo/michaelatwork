@@ -39,6 +39,7 @@ gem 'friendly_id'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'high_voltage'
+gem 'unicorn'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,6 +50,7 @@ group :development, :test do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rbenv', require: false
+  gem 'capistrano3-unicorn', require: false
 end
 
 group :development do
