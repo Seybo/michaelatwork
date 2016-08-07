@@ -56,7 +56,3 @@ group :development do
   gem 'meta_request'
   gem 'rails-footnotes'
 end
-
-group :production do
-  gem 'passenger'
-end
