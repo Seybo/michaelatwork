@@ -1,0 +1,51 @@
+$text-color: #52656B;
+$font-size-base: 16px;
+$theme-color1: #FFF;
+$theme-color2: #3a7bd5;
+$theme-color3: green;
+
+$link-hover-color: darken($theme-color1, 25%);
+$header-background: linear-gradient(to left, #3a7bd5 , #3a6073);
+$font-ubuntu: 'ubunturegular', Helvetica, Arial, sans-serif;
+$font-ubuntu-medium: 'ubuntumedium', Helvetica, Arial, sans-serif;
+$font-vollkorn: 'vollkornregular', Georgia, Times, serif;
+
+@mixin linx-lvha($link, $visit, $hover, $active) {
+  a {
+    text-decoration: none;
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin headers-pseudo-design {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 75%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid $theme-color2;
+    border-right: 10px solid transparent;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid $theme-color2;
+    border-left: 10px solid transparent;
+  }
+}
