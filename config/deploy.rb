@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:Seybo/michaelatwork.git'
 set :deploy_to, '/home/glaux/website'
 set :deploy_user, 'glaux'
 
-#rbenv
+# rbenv
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, '2.3.1'
 
@@ -15,7 +15,7 @@ set :rbenv_ruby, '2.3.1'
 append :linked_files, 'config/database.yml', '.env'
 
 # Default value for linked_dirs is []
-append :linked_dirs, 'bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'vendor/bundle'
+append :linked_dirs, 'bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/projects', 'vendor/bundle'
 
 namespace :deploy do
   desc 'Restart application'
