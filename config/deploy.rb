@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 # config valid only for current version of Capistrano
-lock '3.6.0'
+lock '3.8.2'
 
 set :application, 'michaelatwork'
 set :repo_url, 'git@github.com:Seybo/michaelatwork.git'
