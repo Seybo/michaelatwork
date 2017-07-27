@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem 'pg'
@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
+# this is needed for ruby 2.4.0 and json gem v.18 incompatibility
+gem 'json', github: 'flori/json', branch: 'v1.8'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', group: :doc
 
