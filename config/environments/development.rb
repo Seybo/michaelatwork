@@ -1,5 +1,5 @@
 Rails.application.configure do
-  
+
   config.cache_classes = false
   config.reload_classes_only_on_change = false
 
@@ -37,4 +37,18 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+
+  # set quite assets
+  config.assets.quiet = true
+
+  # Bullet config
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.alert = true
+    Bullet.console = true
+    Bullet.rails_logger = true
+    Bullet.add_footer = true
+  end
 end

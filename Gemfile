@@ -29,7 +29,6 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'byebug'
-  gem 'pry-rails'
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
@@ -43,4 +42,10 @@ group :development do
   gem 'better_errors'
   gem 'meta_request'
   gem 'rails-footnotes'
+  gem 'rack-livereload'
+  gem 'guard-livereload', require: false
+  gem 'binding_of_caller'
+  gem 'bullet'
+  gem 'pry-rails'
+  gem 'annotate'
 end
