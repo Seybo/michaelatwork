@@ -47,5 +47,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'annotate'
 end
