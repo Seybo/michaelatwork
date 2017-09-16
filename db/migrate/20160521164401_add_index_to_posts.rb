@@ -1,4 +1,4 @@
-class AddIndexToPosts < ActiveRecord::Migration
+class AddIndexToPosts < ActiveRecord::Migration[5.1]
   def change
     add_index :posts, :published_at
   end
