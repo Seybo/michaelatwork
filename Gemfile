@@ -25,15 +25,13 @@ gem 'friendly_id'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'high_voltage'
-gem 'unicorn'
 
 group :development, :test do
   gem 'byebug'
   gem 'capistrano', require: false
-  gem 'capistrano-bundler', require: false
+  gem 'capistrano-passenger', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rbenv', require: false
-  gem 'capistrano3-unicorn', require: false
 end
 
 group :development do

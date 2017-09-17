@@ -1,32 +1,15 @@
-# frozen_string_literal: true
-
 # config valid only for current version of Capistrano
-lock '3.8.2'
+lock "3.9.1"
 
-set :application, 'michaelatwork'
+set :application, 'michaelatworkspace'
 set :repo_url, 'git@github.com:Seybo/michaelatwork.git'
 
-set :deploy_to, '/home/glaux/website'
-set :deploy_user, 'glaux'
+set :deploy_to, '/home/glaux/space'
 
-# rbenv
-set :rbenv_type, :user # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.3.1'
-
-# Default value for :linked_files is []
 append :linked_files, 'config/database.yml', '.env'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/projects'
 
-# Default value for linked_dirs is []
-append :linked_dirs, 'bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/projects', 'vendor/bundle'
+set :rbenv_type, :user
+set :rbenv_ruby, '2.4.1'
 
-namespace :deploy do
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # execute :touch, release_path.join('tmp/restart.txt') // for passenger
-      invoke 'unicorn:restart'
-    end
-  end
-
-  after :publishing, :restart
-end
+set :passenger_restart_with_touch, false

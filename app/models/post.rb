@@ -15,6 +15,11 @@
 #  slug               :string
 #  category_id        :integer
 #
+# Indexes
+#
+#  index_posts_on_published_at  (published_at)
+#  index_posts_on_slug          (slug) UNIQUE
+#
 
 class Post < ActiveRecord::Base
 
