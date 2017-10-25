@@ -39,6 +39,8 @@ bower.json
 .byebug_history
 
 #other
+.eslintrc.json
 .rubocop_todo.yml
 .env
 public/assets/
+public/design/

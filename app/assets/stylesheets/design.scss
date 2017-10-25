@@ -1,6 +1,154 @@
-.design-page-content {
+@import 'design-lines';
 
-  flex-grow: 1;
-  align-self: center;
-  
+@mixin transition($transition...) {
+  transition: $transition;
+}
+
+@mixin hovered() {
+  filter: grayscale(0);
+  width: 10vw;
+  opacity: 1;
+  box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.l1,
+ul.l2,
+ul.l3,
+ul.l4,
+ul.l5,
+ul.l6,
+ul.l7,
+ul.l8,
+ul.l9 {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  width: 70vw; // same as the line below the header
+  margin: 0vw auto 1vw auto;
+
+
+  li {
+    @include transition(all .1s linear);
+
+    width: 5vw;
+    height: 10vw;
+    opacity: 0.2;
+    filter: grayscale(1);
+    margin-right: 1vw;
+  }
+
+  .hover {
+    @include hovered();
+    @include transition(all .1s linear);
+  }
+
+  li.selected {
+    @include hovered();
+  }
+}
+
+ul.l1 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-1, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l2 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-2, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l3 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-3, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l4 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-4, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l5 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-5, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l6 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-6, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l7 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-7, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l8 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-8, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+ul.l9 {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background: url(nth($line-9, $i)) top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
 }
