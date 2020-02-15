@@ -1,2 +1,2 @@
 # blog
-my weblog on htttp://michaelatwork.space
+my weblog [currently not available]
